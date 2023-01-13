@@ -3,10 +3,6 @@ const nunjucks = require('nunjucks');
 const app = express();
 const port = 3000;
 
-app.get('/', (request, response) => {
-    response.send('Hello World!');
-});
-
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
@@ -22,3 +18,5 @@ app.get('/', async function (request, response, next) {
         title: 'Nunjucks hello world',
     });
 });
+
+app.use(express.static('public'));
