@@ -71,22 +71,65 @@ select {
     scroll-behavior: auto !important;
   }
 }
-body {
-  background-color: aquamarine;
-  width: 100vw;
-  height: 100vh;
+.container {
+  width: min(80ch, 100vw - 2rem);
+  margin-inline: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 a {
-  font-size: x-large;
   text-decoration: none;
-  padding: 0.5rem;
-  font-style: oblique;
-  color: black;
+  color: whitesmoke;
+}
+
+.navbar {
+  background-color: maroon;
+}
+.navbar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4rem;
+}
+.navbar__button {
+  background-color: transparent;
+}
+@media (min-width: 600px) {
+  .navbar__button {
+    display: none;
+  }
+}
+@media (max-width: 599px) {
+  .navbar__collapse {
+    display: none;
+  }
+}
+.navbar__collapse > ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.navbar__collapse--show {
+  display: block;
+  width: 100%;
+}
+.navbar__collapse--show > ul {
+  flex-direction: column;
+  padding: 0;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

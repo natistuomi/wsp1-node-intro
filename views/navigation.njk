@@ -1,6 +1,15 @@
-<nav>
-    <a href="/"><b>Images:</b></a>
-    <a href="/images/dexter.jpg">Dog</a>
-    <a href="/images/bikes.jpg">Bikes</a>
-    <a href="/images/sundown.jpg">Sundown</a>
+<nav class="navbar">
+    <div class="navbar__inner container">
+        <a href="/" class="logo">Images:</a>
+        <button class="navbar__button" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M3 18v-2h18v2Zm0-5v-2h18v2Zm0-5V6h18v2Z"/></svg>
+        </button>
+        <div class="navbar__collapse">
+            <ul class="menu">
+                <li><a href="/images/dexter.jpg">Dog</a></li>
+                <li><a href="/images/bikes.jpg">Bikes</a></li>
+                <li><a href="/images/sundown.jpg">Sundown</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>

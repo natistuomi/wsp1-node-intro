@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    {% block  content %}
-    {% endblock %}
     {% include "navigation.njk" %}
+    <main class="container">
+        {% block  content %}
+        {% endblock %}
+    </main>
+    <script src="js/menu.js"></script>
 </body>
 </html>
